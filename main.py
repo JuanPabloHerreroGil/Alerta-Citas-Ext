@@ -87,7 +87,7 @@ def comprobar_citas():
 
         try:
             # 1. Página inicial
-            page.goto(URL_INICIO, timeout=30000)
+            page.goto(URL_INICIO, timeout=90000, wait_until="domcontentloaded")
 
             # 2. Provincia
             try:
